@@ -13,7 +13,7 @@
 <section class="flex f-direction-column justify-content-center align-items-center flex-1 text-center">
 
 	<h1 class="mt-80">
-		Welcome to your <br />SvelteKit demo app with CSS from <strong>hgrid</strong>
+		Welcome to your <br />SvelteKit demo app with <strong>hgrid</strong>
 	</h1>
 
 	<h2 class="h5 font-normal">
