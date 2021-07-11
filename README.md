@@ -1,3 +1,17 @@
+# Integrating [hgrid-css](https://github.com/ahansson/hgrid-css) in a Svelte project
+
+## Documentation
+https://hgrid.io/documentation/integrate/#svelte
+
+## Repository
+https://github.com/ahansson/hgrid-css
+
+<p><img src="./static/sveltekit-hgrid-demo.png"></p>
+
+## *************
+
+Project created with SvelteKit / [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte). Original Readme:
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
