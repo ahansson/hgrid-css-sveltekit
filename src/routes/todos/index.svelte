@@ -41,7 +41,7 @@
 	<title>Todos</title>
 </svelte:head>
 
-<div class="todos">
+<div class="todos text-center max-width-75pct margin-0-auto padding-100">
 	<h1>Todos</h1>
 
 	<form
@@ -77,8 +77,8 @@
 					result: patch
 				}}
 			>
-				<input type="hidden" name="done" value={todo.done ? '' : 'true'} />
-				<button class="toggle" aria-label="Mark todo as {todo.done ? 'not done' : 'done'}" />
+				<input class="margin-0" type="hidden" name="done" value={todo.done ? '' : 'true'} />
+				<button class="toggle translate-push40h" aria-label="Mark todo as {todo.done ? 'not done' : 'done'}" />
 			</form>
 
 			<form
@@ -117,7 +117,7 @@
 	}
 
 	.new {
-		margin: 0 0 0.5rem 0;
+		margin: 0 0 2rem 0;
 	}
 
 	input {
@@ -126,7 +126,7 @@
 
 	input:focus-visible {
 		box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.1);
-		border: 1px solid #ff3e00 !important;
+		border: 2px solid #b70e71 !important;
 		outline: none;
 	}
 
@@ -142,7 +142,7 @@
 
 	.todo {
 		display: grid;
-		grid-template-columns: 2rem 1fr 2rem;
+		grid-template-columns: 6rem 1fr 2rem;
 		grid-gap: 0.5rem;
 		align-items: center;
 		margin: 0 0 0.5rem 0;
@@ -156,12 +156,11 @@
 
 	.done {
 		transform: none;
-		opacity: 0.4;
+		opacity: 0.6;
 		filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.1));
 	}
 
 	form.text {
-		position: relative;
 		display: flex;
 		align-items: center;
 		flex: 1;
@@ -171,6 +170,7 @@
 		flex: 1;
 		padding: 0.5em 2em 0.5em 0.8em;
 		border-radius: 3px;
+    margin: unset;
 	}
 
 	.todo button {
@@ -180,6 +180,9 @@
 		background-color: transparent;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
+    position: relative;
+    top: 1rem;
+    right: 3rem;
 	}
 
 	button.toggle {
@@ -187,6 +190,7 @@
 		border-radius: 50%;
 		box-sizing: border-box;
 		background-size: 1em auto;
+    padding: unset;
 	}
 
 	.done .toggle {

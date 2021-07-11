@@ -1,3 +1,12 @@
 @use 'hgrid-css/sass/hgrid' with (
-  $link-color: #b4006f
+
+  // These are examples of variables 
+  // you can customize. Full list: 
+  // https://github.com/ahansson/hgrid-css/blob/main/sass/variables/_variables.scss
+
+  $link-color: #b4006f,
+  $body-bg: #f0d8a4,
+  $turn-off-link-decoration: true,
+  $use-global-link-underlines: true,
+  $link-underline-color: #d569a6
 );

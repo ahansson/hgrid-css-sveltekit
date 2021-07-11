@@ -1,12 +1,12 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
+	import logo from './../../../static/icon.png';
 </script>
 
-<header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
+<header class="flex justify-content-space-between">
+	<div class="corner padding-10">
+		<a href="https://hgrid.io">
+			<img src={logo} alt="Hgrid" />
 		</a>
 	</div>
 
@@ -24,21 +24,17 @@
 		</svg>
 	</nav>
 
-	<div class="corner">
-		<!-- TODO put something else here? github link? -->
+	<div class="corner pr-40 pt-10">
+		<p><a href="https://github.com/ahansson/hgrid-css">GitHub</a></p>
 	</div>
 </header>
 
 <style>
-	header {
-		display: flex;
-		justify-content: space-between;
-	}
 
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
+  .corner {
+    width: 5.4rem;
+    height: 5.4rem;
+  }
 
 	.corner a {
 		display: flex;
@@ -107,7 +103,7 @@
 		padding: 0 1em;
 		color: var(--heading-color);
 		font-weight: 700;
-		font-size: 0.8rem;
+		font-size: 1.7rem;
 		text-transform: uppercase;
 		letter-spacing: 10%;
 		text-decoration: none;

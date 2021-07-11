@@ -15,9 +15,7 @@
 
 <div class="counter">
 	<button on:click={() => (count -= 1)} aria-label="Decrease the counter by one">
-		<svg aria-hidden="true" viewBox="0 0 1 1">
-			<path d="M0,0.5 L1,0.5" />
-		</svg>
+		<span class="translate-push8v">-</span>
 	</button>
 
 	<div class="counter-viewport">
@@ -28,9 +26,7 @@
 	</div>
 
 	<button on:click={() => (count += 1)} aria-label="Increase the counter by one">
-		<svg aria-hidden="true" viewBox="0 0 1 1">
-			<path d="M0,0.5 L1,0.5 M0.5,0 L0.5,1" />
-		</svg>
+		<span class="translate-push8v">+</span>
 	</button>
 </div>
 
@@ -51,22 +47,11 @@
 		border: 0;
 		background-color: transparent;
 		color: var(--text-color);
-		font-size: 2rem;
+		font-size: 4rem;
 	}
 
 	.counter button:hover {
 		background-color: var(--secondary-color);
-	}
-
-	svg {
-		width: 25%;
-		height: 25%;
-	}
-
-	path {
-		vector-effect: non-scaling-stroke;
-		stroke-width: 2px;
-		stroke: var(--text-color);
 	}
 
 	.counter-viewport {
